@@ -4,7 +4,7 @@ Install NodeJS on your machine and run file node server.js
 
 Docker had provided and using cli as below
 
-docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html oluciazo/iot:apache
+docker run -d -p 80:80 --name my-apache-php-app -v /var/www/html oluciazo/iot:apache
 
 docker run --name myadmin -d --link mysql-iot:db -p 8081:80 oluciazo/iot:phpmyadmin
 
